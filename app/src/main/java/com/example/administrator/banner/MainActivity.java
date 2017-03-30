@@ -44,9 +44,12 @@ public class MainActivity extends AppCompatActivity{
 
 
                 }
-                banner.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
+
+                //设置指示器类型
+                banner.setPresetIndicator(SliderLayout.PresetIndicators.Right_Bottom);
                 banner.setCustomAnimation(new DescriptionAnimation());
-                banner.setPresetTransformer(SliderLayout.Transformer.RotateUp);
+                //设置转场动画
+                banner.setPresetTransformer(SliderLayout.Transformer.RotateDown);
                 banner.setDuration(3000);
             }
         });
